@@ -1,154 +1,253 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Agent Hub | Deacon Real Estate</title>
-
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="animations.css"/>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Agent Hub | Jacob Deacon · eXp Realty</title>
+<meta name="description" content="For real estate agents: compare your brokerage with eXp Realty and see how much more you could keep.">
+<link rel="icon" href="assets/logo.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="theme.css">
 </head>
-
 <body>
+<div class="topbar"><div class="wrap">
+  <a href="tel:15747801143">(574) 780-1143</a>
+  <a href="mailto:jacob@livindyrealty.com">jacob@livindyrealty.com</a>
+</div></div>
 
-    <div class="top-bar">
-        <div class="container top-bar-inner">
-            <a href="tel:13175551234" class="top-link">(574) 780-1143</a>
-            <span class="top-separator">•</span>
-            <a href="mailto:jacob@livindyrealty.com" class="top-link">
-                jacob@livindyrealty.com
-            </a>
-        </div>
+<header class="nav"><div class="wrap">
+  <a href="index.html" class="brand">
+    <img src="assets/logo.jpg" alt="Liv Indy Realty logo">
+    <div>Jacob Deacon<small>LIV INDY REALTY · eXp</small></div>
+  </a>
+  <button class="menu-btn" aria-label="Open menu" onclick="document.getElementById('links').classList.toggle('open')">☰</button>
+  <nav class="links" id="links">
+    <a href="index.html">About Me</a>
+    <a href="why-choose-me.html">Why Choose Me</a>
+    <a href="agent-hub.html" class="active">Agent Hub</a>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdclbopI-u-K8pwTuJBuKX7IKwtZ7r1-WSbY9pI1-oDFVCSww/viewform" target="_blank" rel="noopener" class="cta">Book a Meeting</a>
+  </nav>
+</div></header>
+
+<section class="hero solo">
+  <div class="wrap reveal">
+    <div class="eyebrow">For Agents</div>
+    <h1>Your brokerage should <em>amplify</em> you.</h1>
+    <p class="lead">I wasn't always with eXp, but joining completely changed my career. Plug your numbers into the calculator below and see what you would actually take home.</p>
+    <div class="actions">
+      <a class="btn btn-gold" href="#calculator">Compare Your Brokerage →</a>
+      <a class="btn btn-ghost" href="https://docs.google.com/forms/d/e/1FAIpQLSdclbopI-u-K8pwTuJBuKX7IKwtZ7r1-WSbY9pI1-oDFVCSww/viewform" target="_blank" rel="noopener">Talk With Me</a>
     </div>
+  </div>
+</section>
 
-    <!-- HEADER -->
-    <header class="site-header">
-        <div class="container header-inner">
-            <nav class="nav">
-                <a class="brand" href="index.html">
-                    <img class="brand-logo" src="assets/logo.jpg" alt="Deacon Real Estate logo" />
-                </a>
-                <a class="nav-link" href="index.html">About Me</a>
-                <a class="nav-link" href="why-choose-me.html">Why Choose Me</a>
-                <a class="nav-link active" href="agent-hub.html">Agent Hub</a>
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdclbopI-u-K8pwTuJBuKX7IKwtZ7r1-WSbY9pI1-oDFVCSww/viewform"
-                    class="nav-link nav-cta" target="_blank">
-                    Book a Meeting
-                </a>
-            </nav>
+<section class="block">
+  <div class="wrap">
+    <div class="head reveal">
+      <div class="eyebrow">Why eXp</div>
+      <h2>Built to help you grow, not hold you back.</h2>
+      <p>Your brokerage shouldn't define you. It should support your growth and put more money back in your pocket.</p>
+    </div>
+    <div class="cards">
+      <div class="card reveal"><div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg></div>
+        <h3>Build Your Own Brand</h3><p>Get the tools and freedom to build a real personal brand, not just a brokerage's.</p></div>
+      <div class="card reveal"><div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
+        <h3>Keep More of Your Income</h3><p>A model designed to put more of every commission check back in your pocket.</p></div>
+      <div class="card reveal"><div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="7" r="3"/><circle cx="17" cy="9" r="2.5"/><path d="M3 20a6 6 0 0 1 12 0"/><path d="M14 20a4.5 4.5 0 0 1 7-3.7"/></svg></div>
+        <h3>Grow by Helping Others</h3><p>A recruitment model that rewards you for helping other agents win.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="block cream" id="calculator">
+  <div class="wrap">
+    <div class="head center reveal">
+      <div class="eyebrow">Brokerage Take-Home Calculator</div>
+      <h2>What would you actually take home?</h2>
+      <p>Plug in last year's numbers and your brokerage's split and fees. See what you kept, what you'd keep at eXp Realty and the difference over five years. It's filled in with an example so you can see how it works.</p>
+    </div>
+    <div class="calc reveal">
+      <form class="cpanel" id="calc" autocomplete="off">
+        <h4>Your business</h4>
+        <div class="row2">
+          <label>Gross commission income (GCI) per year<div class="inp"><span>$</span><input id="gci" inputmode="decimal" value="150,000"></div></label>
+          <label>Closed deals per year<small>Each buyer or seller side counts as 1</small><div class="inp"><input id="deals" inputmode="numeric" value="15"></div></label>
         </div>
-    </header>
-
-    <main>
-
-        <!-- INTRO -->
-        <section class="page-intro">
-            <div class="container">
-                <h1 class="reveal-left">Agent Hub</h1>
-
-                <p class="intro-subtext reveal-left">
-                    Compare your brokerage with eXp’s numbers. I wasn’t always with eXp, but
-                    joining completely changed my career. Your brokerage shouldn’t define you —
-                    it should amplify you, support your growth, and help you push toward success
-                    while putting more money back in your pocket. eXp gives you the tools to build
-                    a real personal brand, keep more of your income, and even grow through a
-                    recruitment model that rewards you for helping other agents win. This page
-                    lets you plug in your numbers and see the difference for yourself.
-                </p>
-
-                <a class="btn primary reveal"
-                    href="https://docs.google.com/forms/d/e/1FAIpQLSdclbopI-u-K8pwTuJBuKX7IKwtZ7r1-WSbY9pI1-oDFVCSww/viewform"
-                    target="_blank">
-                    Connect With Me
-                </a>
-            </div>
-        </section>
-
-        <div class="section-divider reveal"></div>
-
-        <!-- CALCULATOR -->
-        <section class="calculator-section reveal">
-            <div class="container">
-
-                <div class="embed-card">
-                    <h2>Brokerage Comparison Calculator</h2>
-
-                    <!-- Google Sheet Embed -->
-                    <iframe src="https://docs.google.com/spreadsheets/d/1FYialutuYEkKSxNFDsKVxgvFT5Ax1dHf/preview"
-                        class="calculator-frame" loading="lazy">
-                    </iframe>
-
-                    <a class="btn secondary"
-                        href="https://docs.google.com/spreadsheets/d/1FYialutuYEkKSxNFDsKVxgvFT5Ax1dHf/copy"
-                        target="_blank">
-                        Make a Copy to Enter Your Numbers
-                    </a>
-                </div>
-
-            </div>
-        </section>
-
-    </main>
-
- <!-- Footer -->
-    <footer class="site-footer reveal">
-        <div class="container footer-inner">
-            <p>© <span id="year"></span> livindy. All rights reserved.</p>
-            <div class="footer-socials">
-                <a href="https://www.facebook.com/deaconrealestate12" target="_blank" rel="noopener"
-                    aria-label="Facebook" class="social-icon">
-                    <svg viewBox="0 0 24 24" aria-hidden="true">
-                        <path d="M22 12a10 10 0 1 0-11.6 9.9v-7H7.1v-2.9h3.3V9.8c0-3.3 2-5.1 5-5.1
-            1.5 0 3 .3 3 .3v3.3h-1.7c-1.7 0-2.2 1-2.2 2.1v2.5h3.8l-.6 2.9h-3.2v7A10 10 0 0 0 22 12z" />
-                    </svg>
-                </a>
-
-                <a href="https://www.instagram.com/jacob_deacon1" target="_blank" rel="noopener" aria-label="Instagram"
-                    class="social-icon">
-                    <svg viewBox="0 0 24 24" aria-hidden="true">
-                        <path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm5
-            5.3a4.7 4.7 0 1 0 0 9.4 4.7 4.7 0 0 0 0-9.4zm6.1-.8a1.1 1.1 0 1 0 0 2.2 1.1
-            1.1 0 0 0 0-2.2zM12 9a3 3 0 1 1 0 6 3 3 0 0 1 0-6z" />
-                    </svg>
-                </a>
-
-                <a href="https://www.zillow.com/profile/Jacob%20deacon11" target="_blank" rel="noopener"
-                    aria-label="Zillow" class="social-icon">
-                    <svg viewBox="0 0 24 24" aria-hidden="true">
-                        <!-- House outline -->
-                        <path d="M3 11.5L12 4l9 7.5v7.5a1 1 0 0 1-1 1h-5v-5h-6v5H4a1 1 0 0 1-1-1z" />
-                        <!-- Stylized Z -->
-                        <path d="M9 9h6l-6 6h6" fill="none" stroke="currentColor" stroke-width="1.8"
-                            stroke-linecap="round" stroke-linejoin="round" />
-                    </svg>
-                </a>
-
-                <a href="https://www.tiktok.com/@jacob_deacon1" target="_blank" rel="noopener" class="contact-item" aria-label="TikTok">
-          <span class="contact-icon">
-            <svg viewBox="0 0 24 24" aria-hidden="true">
-              <path d="M12 2v12.5a3.5 3.5 0 1 1-3-3.45V8.2a7 7 0 1 0 7 7V7.4a5.5 5.5 0 0 0 3 1V5.5a3 3 0 0 1-3-3.5z" />
-            </svg>
-          </span>
-        </a>
-            </div>
-            <p class="footer-contact">
-                Call or Text:
-                <a href="tel:13175551234">(574) 780-1143</a>
-                <span>•</span>
-                <a href="mailto:jacob@livindyrealty.com">
-                    jacob@livindyrealty.com
-                </a>
-            </p>
+        <h4>Your current brokerage</h4>
+        <div class="presets" role="group" aria-label="Start from a common setup">
+          <button type="button" class="chip" data-preset="split" aria-pressed="true">70/30, no cap</button>
+          <button type="button" class="chip" data-preset="franchise">Franchise: 70/30 + royalty</button>
+          <button type="button" class="chip" data-preset="capped">80/20 with a cap</button>
+          <button type="button" class="chip" data-preset="flat">100% + flat fees</button>
         </div>
-    </footer>
+        <p class="cnote">Pick the closest setup, then change any number to match your contract.</p>
+        <div class="row2">
+          <label>Your split<small>% you keep before any cap</small><div class="inp"><input id="c_split" inputmode="decimal" value="70"><span>%</span></div></label>
+          <label>Annual cap<small>0 = no cap</small><div class="inp"><span>$</span><input id="c_cap" inputmode="decimal" value="0"></div></label>
+          <label>Monthly fee<small>Desk, tech or brokerage fee</small><div class="inp"><span>$</span><input id="c_month" inputmode="decimal" value="0"></div></label>
+          <label>Per-deal fee<small>Transaction or admin fee</small><div class="inp"><span>$</span><input id="c_tx" inputmode="decimal" value="0"></div></label>
+          <label>Royalty / franchise fee<small>% of GCI</small><div class="inp"><input id="c_roy" inputmode="decimal" value="0"><span>%</span></div></label>
+          <label>Royalty annual cap<small>0 = no cap</small><div class="inp"><span>$</span><input id="c_roycap" inputmode="decimal" value="0"></div></label>
+          <label>E&amp;O per deal<div class="inp"><span>$</span><input id="c_eo" inputmode="decimal" value="0"></div></label>
+          <label>Other yearly fees<small>Marketing, signs, dues</small><div class="inp"><span>$</span><input id="c_other" inputmode="decimal" value="0"></div></label>
+        </div>
+        <details>
+          <summary>eXp Realty numbers (pre-filled)</summary>
+          <div class="row2">
+            <label>Your split<div class="inp"><input id="e_split" inputmode="decimal" value="80"><span>%</span></div></label>
+            <label>Annual cap<div class="inp"><span>$</span><input id="e_cap" inputmode="decimal" value="16000"></div></label>
+            <label>Monthly fee<div class="inp"><span>$</span><input id="e_month" inputmode="decimal" value="85"></div></label>
+            <label>Per-deal fee before cap<small>Broker review fee</small><div class="inp"><span>$</span><input id="e_pre" inputmode="decimal" value="25"></div></label>
+            <label>Per-deal fee after cap<small>For the next 20 deals</small><div class="inp"><span>$</span><input id="e_post" inputmode="decimal" value="250"></div></label>
+            <label>After that<small>Per deal, after 20 post-cap deals</small><div class="inp"><span>$</span><input id="e_post2" inputmode="decimal" value="75"></div></label>
+            <label>E&amp;O per deal<div class="inp"><span>$</span><input id="e_eo" inputmode="decimal" value="60"></div></label>
+            <label>E&amp;O yearly cap<div class="inp"><span>$</span><input id="e_eocap" inputmode="decimal" value="750"></div></label>
+          </div>
+          <p class="cnote" style="margin-top:12px">Based on public 2026 info about eXp's agent plan. Numbers can change, so confirm the current figures with eXp before you decide anything.</p>
+        </details>
+      </form>
+      <div class="cres" aria-live="polite">
+        <div class="cpanel">
+          <div class="verdict">
+            <div class="k" id="v_k">At eXp you'd keep</div>
+            <div class="big" id="v_big">$0</div>
+            <div class="sub" id="v_sub">more per year</div>
+          </div>
+          <div class="bars">
+            <div class="bar"><div class="lbl"><span>Your take-home now</span><b id="b_cur">$0</b></div><div class="track"><div class="fill" id="f_cur" style="background:#b8c2cf;width:0"></div></div></div>
+            <div class="bar"><div class="lbl"><span>Your take-home at eXp</span><b id="b_exp">$0</b></div><div class="track"><div class="fill" id="f_exp" style="background:linear-gradient(90deg,#e6c98a,#c9a45c);width:0"></div></div></div>
+          </div>
+          <div class="ctbl"><table>
+            <thead><tr><th>Where your money goes, per year</th><th>Now</th><th>eXp</th></tr></thead>
+            <tbody id="tb"></tbody>
+          </table></div>
+          <div class="extras">
+            <h4>eXp extras (not counted above)</h4>
+            <p><span class="pill" id="icon_pill">ICON</span> <span id="icon_txt"></span></p>
+            <p>Revenue share: income from agents you bring to eXp, paid out of eXp's share, not theirs.</p>
+            <p>Stock: eXp agents can earn company stock for production and capping.</p>
+          </div>
+          <a class="btn btn-gold" style="justify-self:start" href="https://docs.google.com/forms/d/e/1FAIpQLSdAzIuS_YRHDUqAila9-OAQKG_u18Qu0jcvUpiB65yApVT1rg/viewform" target="_blank" rel="noopener">Talk your numbers through with me →</a>
+          <p class="cnote">No pressure at all. Anyone who teams up with me gets the full Next Level Agent course free.</p>
+        </div>
+      </div>
+    </div>
+    <p class="cnote reveal" style="text-align:center;margin-top:24px">This is a comparison tool, not financial advice. It estimates fees from the numbers you enter and does not include taxes, MLS or board dues, or personal business expenses.</p>
+  </div>
+</section>
 
-    <script src="scroll.js"></script>
-    <script src="reveal.js"></script>
-    <script>
-        document.getElementById("year").textContent = new Date().getFullYear();
-    </script>
+<section class="cta-band">
+  <div class="wrap">
+    <div class="cta-box reveal">
+      <div>
+        <div class="eyebrow">Let's Connect</div>
+        <h2>Curious what eXp could look like for you?</h2>
+        <p>No pressure and no pitch deck. Just a straight conversation about your business and where you want to take it.</p>
+        <div style="margin-top:28px"><a class="btn btn-gold" href="https://docs.google.com/forms/d/e/1FAIpQLSdclbopI-u-K8pwTuJBuKX7IKwtZ7r1-WSbY9pI1-oDFVCSww/viewform" target="_blank" rel="noopener">Book a Call →</a></div>
+      </div>
+      <div class="contact-list">
+        <a href="tel:15747801143"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>(574) 780-1143</a>
+        <a href="mailto:jacob@livindyrealty.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg>jacob@livindyrealty.com</a>
+      </div>
+    </div>
+  </div>
+</section>
+<footer>
+  <div class="wrap">
+    <div class="top">
+      <a href="index.html" class="brand"><img src="assets/logo.jpg" alt="Liv Indy Realty logo"><div>Jacob Deacon<small>LIV INDY REALTY · eXp REALTY</small></div></a>
+      <div class="socials">
+        <a href="https://www.facebook.com/deaconrealestate12" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M14 8h3V4h-3c-2.8 0-4 1.7-4 4v2H7v4h3v8h4v-8h3l1-4h-4V8.5c0-.3.2-.5.5-.5z"/></svg></a>
+        <a href="https://www.instagram.com/jacob_deacon1" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".8" fill="currentColor"/></svg></a>
+        <a href="https://www.tiktok.com/@jacob_deacon1" target="_blank" rel="noopener" aria-label="TikTok"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16.5 3c.4 2.2 1.8 3.6 4 3.9v3.2c-1.5 0-2.9-.4-4-1.1v6.3a6 6 0 1 1-6-6c.3 0 .7 0 1 .1v3.3a2.8 2.8 0 1 0 1.8 2.6V3z"/></svg></a>
+        <a href="https://www.zillow.com/profile/Jacob%20deacon11" target="_blank" rel="noopener" aria-label="Zillow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M3 11 12 4l9 7"/><path d="M7 14h10l-10 6h10"/></svg></a>
+      </div>
+    </div>
+    <div class="bottom">
+      <span>© 2026 Liv Indy Realty · Jacob Deacon, Broker with eXp Realty, LLC</span>
+      <span>(574) 780-1143 · jacob@livindyrealty.com</span>
+    </div>
+  </div>
+</footer>
 
+<script>
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
+<script>
+(function(){
+  var $ = function(id){ return document.getElementById(id); };
+  var num = function(id){ var v = parseFloat(String($(id).value).replace(/[^0-9.]/g,'')); return isFinite(v) ? v : 0; };
+  var money = function(v){ return (v < 0 ? '-$' : '$') + Math.round(Math.abs(v)).toLocaleString('en-US'); };
+  var PRESETS = {
+    split:     {c_split:70, c_cap:0,     c_month:0,   c_tx:0,   c_roy:0, c_roycap:0,    c_eo:0,  c_other:0},
+    franchise: {c_split:70, c_cap:0,     c_month:0,   c_tx:0,   c_roy:6, c_roycap:3000, c_eo:0,  c_other:0},
+    capped:    {c_split:80, c_cap:18000, c_month:0,   c_tx:0,   c_roy:0, c_roycap:0,    c_eo:0,  c_other:0},
+    flat:      {c_split:100,c_cap:0,     c_month:150, c_tx:395, c_roy:0, c_roycap:0,    c_eo:0,  c_other:0}
+  };
+  function run(gci, deals, t){
+    var avg = deals > 0 ? gci / deals : 0;
+    var share = 1 - Math.min(t.split, 100) / 100;
+    var uncapped = gci * share;
+    var split = t.cap > 0 ? Math.min(uncapped, t.cap) : uncapped;
+    var pre = deals;
+    if (t.cap > 0 && share > 0 && avg > 0) pre = Math.min(deals, Math.ceil(t.cap / (avg * share)));
+    var post = Math.max(deals - pre, 0);
+    var tx = pre * t.pre;
+    if (t.postN > 0) tx += Math.min(post, t.postN) * t.post + Math.max(post - t.postN, 0) * t.post2;
+    else tx += post * t.post;
+    var eo = t.eocap > 0 ? Math.min(deals * t.eo, t.eocap) : deals * t.eo;
+    var roy = t.roycap > 0 ? Math.min(gci * t.roy / 100, t.roycap) : gci * t.roy / 100;
+    var monthly = t.month * 12;
+    var other = t.other;
+    var total = split + tx + eo + roy + monthly + other;
+    return {split:split, tx:tx, eo:eo, roy:roy, monthly:monthly, other:other, total:total, take:gci - total, post:post};
+  }
+  function update(){
+    var gci = num('gci'), deals = Math.round(num('deals'));
+    var cur = run(gci, deals, {split:num('c_split'), cap:num('c_cap'), month:num('c_month'), pre:num('c_tx'), post:num('c_tx'), post2:num('c_tx'), postN:0, eo:num('c_eo'), eocap:0, roy:num('c_roy'), roycap:num('c_roycap'), other:num('c_other')});
+    var exp = run(gci, deals, {split:num('e_split'), cap:num('e_cap'), month:num('e_month'), pre:num('e_pre'), post:num('e_post'), post2:num('e_post2'), postN:20, eo:num('e_eo'), eocap:num('e_eocap'), roy:0, roycap:0, other:0});
+    var diff = exp.take - cur.take;
+    var big = $('v_big');
+    if (diff > 0){ $('v_k').textContent = "At eXp you'd keep"; big.textContent = money(diff); big.classList.add('pos'); $('v_sub').textContent = 'more per year, about ' + money(diff*5) + ' over 5 years'; }
+    else if (diff < 0){ $('v_k').textContent = 'Where you are, you keep'; big.textContent = money(-diff); big.classList.remove('pos'); $('v_sub').textContent = 'more per year than at eXp, with these numbers'; }
+    else { $('v_k').textContent = 'Same take-home'; big.textContent = '$0'; big.classList.remove('pos'); $('v_sub').textContent = 'difference per year'; }
+    $('b_cur').textContent = money(cur.take); $('b_exp').textContent = money(exp.take);
+    var max = Math.max(cur.take, exp.take, 1);
+    $('f_cur').style.width = Math.max(0, cur.take / max * 100) + '%';
+    $('f_exp').style.width = Math.max(0, exp.take / max * 100) + '%';
+    var pct = function(v){ return gci > 0 ? (v / gci * 100).toFixed(1) + '%' : '0%'; };
+    var rows = [
+      ['Split paid to brokerage', cur.split, exp.split],
+      ['Per-deal fees', cur.tx, exp.tx],
+      ['E&amp;O', cur.eo, exp.eo],
+      ['Royalty / franchise fees', cur.roy, exp.roy],
+      ['Monthly fees (x12)', cur.monthly, exp.monthly],
+      ['Other yearly fees', cur.other, exp.other]
+    ];
+    $('tb').innerHTML = rows.map(function(r){ return '<tr><td>' + r[0] + '</td><td>' + money(r[1]) + '</td><td>' + money(r[2]) + '</td></tr>'; }).join('') +
+      '<tr class="total"><td>Total paid to brokerage</td><td>' + money(cur.total) + '</td><td>' + money(exp.total) + '</td></tr>' +
+      '<tr class="take"><td>You keep</td><td>' + money(cur.take) + ' <span style="color:var(--muted)">(' + pct(cur.take) + ')</span></td><td>' + money(exp.take) + ' <span style="color:var(--muted)">(' + pct(exp.take) + ')</span></td></tr>';
+    var ok = exp.post >= 20 || gci >= 500000;
+    $('icon_pill').className = 'pill' + (ok ? ' ok' : '');
+    $('icon_txt').textContent = ok ? "Your production may qualify for eXp's ICON award: up to $16,000 back in stock (there are also culture requirements)."
+                                   : "ICON award: up to $16,000 back in stock for agents with about 20 closings after capping (or $500K+ GCI). You'd need " + Math.max(0, 20 - exp.post) + ' more post-cap deals.';
+  }
+  document.querySelectorAll('[data-preset]').forEach(function(b){ b.addEventListener('click', function(){
+    var p = PRESETS[b.dataset.preset];
+    Object.keys(p).forEach(function(k){ $(k).value = p[k].toLocaleString('en-US'); });
+    document.querySelectorAll('[data-preset]').forEach(function(x){ x.setAttribute('aria-pressed', x === b ? 'true' : 'false'); });
+    update();
+  }); });
+  document.querySelectorAll('#calc input').forEach(function(i){
+    i.addEventListener('input', update);
+    i.addEventListener('blur', function(){ var v = num(i.id); if (i.id === 'gci' || /cap$/.test(i.id) || /other$/.test(i.id)) i.value = v ? v.toLocaleString('en-US') : '0'; });
+  });
+  $('calc').addEventListener('submit', function(e){ e.preventDefault(); });
+  update();
+})();
+</script>
 </body>
-
 </html>
