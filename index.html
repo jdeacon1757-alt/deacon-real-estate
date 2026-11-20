@@ -140,8 +140,8 @@ section.block{padding:110px 0}
 .areas h2{color:#fff}
 .areas .head p{color:#94a3b8}
 .chips{display:flex;flex-wrap:wrap;gap:12px}
-.chips span{border:1px solid rgba(255,255,255,.14);padding:12px 22px;border-radius:999px;color:#e2e8f0;font-weight:500;transition:background .2s,border-color .2s}
-.chips span:hover{background:rgba(201,164,92,.12);border-color:var(--gold)}
+.chips .chip{display:inline-flex;align-items:center;line-height:1.2;text-decoration:none;border:1px solid rgba(255,255,255,.14);padding:12px 22px;border-radius:999px;color:#e2e8f0;font-weight:500;transition:background .2s,border-color .2s}
+.chips a.chip:hover{background:rgba(201,164,92,.12);border-color:var(--gold)}
 
 /* CTA */
 .cta-band{padding:100px 0}
@@ -359,7 +359,13 @@ nav.links a.dd-btn.active{color:#fff;background:rgba(255,255,255,.07)}
       <p>Local market knowledge across the north side and beyond.</p>
     </div>
     <div class="chips reveal">
-      <a href="moving-to-westfield-indiana.html"><span>Westfield</span></a><a href="chatham-hills.html"><span>Chatham Hills</span></a><a href="bridgewater-club.html"><span>Bridgewater Club</span></a><a href="andover-westfield.html"><span>Andover</span></a><a href="viking-meadows.html"><span>Viking Meadows</span></a><a href="springmill-westfield.html"><span>Springmill</span></a><a href="carmel-indiana.html"><span>Carmel</span></a><a href="noblesville-indiana.html"><span>Noblesville</span></a><a href="fishers-indiana.html"><span>Fishers</span></a><a href="zionsville-indiana.html"><span>Zionsville</span></a><a href="indianapolis-indiana.html"><span>Indianapolis</span></a><span>Greenwood</span><span>Central Indiana</span>
+      <a class="chip" href="moving-to-westfield-indiana.html">Westfield</a>
+      <a class="chip" href="carmel-indiana.html">Carmel</a>
+      <a class="chip" href="noblesville-indiana.html">Noblesville</a>
+      <a class="chip" href="fishers-indiana.html">Fishers</a>
+      <a class="chip" href="zionsville-indiana.html">Zionsville</a>
+      <a class="chip" href="indianapolis-indiana.html">Indianapolis</a>
+      <span class="chip">Greenwood</span>
     </div>
   </div>
 </section>
