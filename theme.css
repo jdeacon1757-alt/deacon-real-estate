@@ -181,7 +181,9 @@ footer .bottom a{color:inherit;text-decoration:none}
 /* Nav: keep links on one line; switch to menu button when space runs out */
 nav.links a{white-space:nowrap;padding:9px 11px}
 .brand,.brand small{white-space:nowrap}
-@media (max-width:1240px){
+header.nav .wrap{max-width:1360px;gap:24px}
+header.nav .brand{flex-shrink:0}
+@media (max-width:1360px){
   nav.links{display:none;position:absolute;top:76px;left:0;right:0;flex-direction:column;align-items:stretch;background:var(--navy);padding:14px 20px 22px;border-bottom:1px solid rgba(255,255,255,.08);z-index:50}
   nav.links.open{display:flex}
   nav.links a.cta{margin:8px 0 0;text-align:center}
