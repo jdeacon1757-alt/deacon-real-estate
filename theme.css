@@ -215,3 +215,9 @@ nav.links a.dd-btn.active{color:#fff;background:rgba(255,255,255,.07)}
   .dd .dd-city.has-sub.open .sub{display:flex}
   .dd-city.open .sub-toggle{transform:rotate(90deg)}
 }
+/* New construction photo steps */
+.build-steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px;margin-top:22px}
+.build-steps figure{margin:0;background:#fff;border:1px solid #e9eef4;border-radius:16px;overflow:hidden}
+.build-steps img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block}
+.build-steps figcaption{padding:12px 14px;font-size:.95rem;color:var(--muted)}
+.build-steps figcaption b{display:block;color:var(--ink);margin-bottom:2px}
