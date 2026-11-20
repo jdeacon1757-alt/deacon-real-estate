@@ -88,6 +88,7 @@ footer .top{display:flex;justify-content:space-between;align-items:center;flex-w
 .socials a:hover{background:var(--gold);color:var(--navy);border-color:var(--gold)}
 .socials svg{width:18px;height:18px}
 footer .bottom{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;padding-top:24px;font-size:.82rem}
+footer .bottom a{color:inherit;text-decoration:none}
 .reveal{opacity:0;transform:translateY(28px);transition:opacity .8s ease,transform .8s ease}
 .reveal.in{opacity:1;transform:none}
 @media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
