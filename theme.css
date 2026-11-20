@@ -223,3 +223,7 @@ nav.links a.dd-btn.active{color:#fff;background:rgba(255,255,255,.07)}
 .build-steps figcaption b{display:block;color:var(--ink);margin-bottom:2px}
 /* divider before New Construction in Area Guides */
 .dd-divider{border-top:1px solid rgba(255,255,255,.1);margin-top:6px;padding-top:6px}
+.wide-photo{margin:22px 0 0;border-radius:16px;overflow:hidden;border:1px solid #e9eef4;background:#fff}
+.wide-photo img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block}
+.wide-photo figcaption{padding:12px 16px;font-size:.95rem;color:var(--muted)}
+.wide-photo figcaption b{color:var(--ink)}
