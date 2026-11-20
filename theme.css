@@ -221,3 +221,5 @@ nav.links a.dd-btn.active{color:#fff;background:rgba(255,255,255,.07)}
 .build-steps img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block}
 .build-steps figcaption{padding:12px 14px;font-size:.95rem;color:var(--muted)}
 .build-steps figcaption b{display:block;color:var(--ink);margin-bottom:2px}
+/* divider before New Construction in Area Guides */
+.dd-divider{border-top:1px solid rgba(255,255,255,.1);margin-top:6px;padding-top:6px}
