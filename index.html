@@ -182,6 +182,16 @@ footer .bottom a{color:inherit;text-decoration:none}
   .services{grid-template-columns:1fr}
   section.block{padding:80px 0}
 }
+
+/* Nav: keep links on one line; switch to menu button when space runs out */
+nav.links a{white-space:nowrap;padding:9px 11px}
+.brand,.brand small{white-space:nowrap}
+@media (max-width:1240px){
+  nav.links{display:none;position:absolute;top:76px;left:0;right:0;flex-direction:column;align-items:stretch;background:var(--navy);padding:14px 20px 22px;border-bottom:1px solid rgba(255,255,255,.08);z-index:50}
+  nav.links.open{display:flex}
+  nav.links a.cta{margin:8px 0 0;text-align:center}
+  .menu-btn{display:block}
+}
 </style>
 </head>
 <body>
@@ -202,6 +212,8 @@ footer .bottom a{color:inherit;text-decoration:none}
     <a href="why-choose-me.html">Why Choose Me</a>
     <a href="sell.html">Sell</a>
     <a href="moving-to-westfield-indiana.html">Westfield Guide</a>
+    <a href="carmel-indiana.html">Carmel Guide</a>
+    <a href="noblesville-indiana.html">Noblesville Guide</a>
     <a href="agent-hub.html">Agent Hub</a>
     <a href="https://docs.google.com/forms/d/e/1FAIpQLSdclbopI-u-K8pwTuJBuKX7IKwtZ7r1-WSbY9pI1-oDFVCSww/viewform" target="_blank" rel="noopener" class="cta">Book a Meeting</a>
   </nav>
