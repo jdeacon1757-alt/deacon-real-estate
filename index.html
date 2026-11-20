@@ -193,13 +193,21 @@ footer .bottom a{color:inherit;text-decoration:none}
 /* Nav: keep links on one line; switch to menu button when space runs out */
 nav.links a{white-space:nowrap;padding:9px 11px}
 .brand,.brand small{white-space:nowrap}
-header.nav .wrap{max-width:1360px;gap:24px}
+header.nav .wrap{max-width:1260px;gap:24px}
 header.nav .brand{flex-shrink:0}
-@media (max-width:1360px){
+/* Area Guides dropdown */
+.dd{position:relative}
+.dd-menu{display:none;position:absolute;top:100%;left:0;min-width:210px;padding:10px;background:var(--navy);border:1px solid rgba(255,255,255,.1);border-radius:14px;box-shadow:0 20px 40px -20px rgba(0,0,0,.6);flex-direction:column;z-index:60}
+.dd:hover .dd-menu,.dd:focus-within .dd-menu{display:flex}
+.dd-menu a{border-radius:10px!important}
+nav.links a.dd-btn.active{color:#fff;background:rgba(255,255,255,.07)}
+@media (max-width:980px){
   nav.links{display:none;position:absolute;top:76px;left:0;right:0;flex-direction:column;align-items:stretch;background:var(--navy);padding:14px 20px 22px;border-bottom:1px solid rgba(255,255,255,.08);z-index:50}
   nav.links.open{display:flex}
   nav.links a.cta{margin:8px 0 0;text-align:center}
   .menu-btn{display:block}
+  .dd-btn{display:none!important}
+  .dd-menu{display:flex;position:static;border:0;box-shadow:none;padding:0 0 0 0;background:none;min-width:0}
 }
 </style>
 </head>
@@ -220,9 +228,17 @@ header.nav .brand{flex-shrink:0}
     <a href="index.html" class="active">About Me</a>
     <a href="why-choose-me.html">Why Choose Me</a>
     <a href="sell.html">Sell</a>
-    <a href="moving-to-westfield-indiana.html">Westfield Guide</a>
-    <a href="carmel-indiana.html">Carmel Guide</a>
-    <a href="noblesville-indiana.html">Noblesville Guide</a>
+    <div class="dd"><a href="moving-to-westfield-indiana.html" class="dd-btn" aria-haspopup="true">Area Guides <span aria-hidden="true">▾</span></a><div class="dd-menu">
+      <a href="moving-to-westfield-indiana.html">Westfield</a>
+      <a href="carmel-indiana.html">Carmel</a>
+      <a href="noblesville-indiana.html">Noblesville</a>
+      <a href="chatham-hills.html">Chatham Hills</a>
+      <a href="bridgewater-club.html">Bridgewater Club</a>
+      <a href="andover-westfield.html">Andover</a>
+      <a href="viking-meadows.html">Viking Meadows</a>
+      <a href="springmill-westfield.html">Springmill</a>
+      <a href="westfield-new-construction.html">New Construction</a>
+    </div></div>
     <a href="agent-hub.html">Agent Hub</a>
     <a href="https://docs.google.com/forms/d/e/1FAIpQLSdclbopI-u-K8pwTuJBuKX7IKwtZ7r1-WSbY9pI1-oDFVCSww/viewform" target="_blank" rel="noopener" class="cta">Book a Meeting</a>
   </nav>
