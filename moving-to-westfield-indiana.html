@@ -22,7 +22,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="theme.css?v=20261119b">
+<link rel="stylesheet" href="theme.css?v=20261120a">
 <script type="application/ld+json">
 {
  "@context": "https://schema.org",
@@ -88,17 +88,25 @@
     <a href="index.html">About Me</a>
     <a href="why-choose-me.html">Why Choose Me</a>
     <a href="sell.html">Sell</a>
-    <div class="dd"><a href="moving-to-westfield-indiana.html" class="dd-btn active" aria-haspopup="true">Area Guides <span aria-hidden="true">▾</span></a><div class="dd-menu">
-      <a href="moving-to-westfield-indiana.html" class="active">Westfield</a>
-      <a href="carmel-indiana.html">Carmel</a>
-      <a href="noblesville-indiana.html">Noblesville</a>
-      <a href="chatham-hills.html">Chatham Hills</a>
-      <a href="bridgewater-club.html">Bridgewater Club</a>
-      <a href="andover-westfield.html">Andover</a>
-      <a href="viking-meadows.html">Viking Meadows</a>
-      <a href="springmill-westfield.html">Springmill</a>
-      <a href="westfield-new-construction.html">New Construction</a>
-    </div></div>
+    <div class="dd"><a href="moving-to-westfield-indiana.html" class="dd-btn active" aria-haspopup="true">Area Guides <span aria-hidden="true">▾</span></a>
+      <div class="dd-menu">
+        <div class="dd-city has-sub"><a href="moving-to-westfield-indiana.html" class="active">Westfield</a><button type="button" class="sub-toggle" aria-label="Show Westfield neighborhoods" aria-expanded="false">▸</button>
+          <div class="sub">
+          <a href="chatham-hills.html">Chatham Hills</a>
+          <a href="bridgewater-club.html">Bridgewater Club</a>
+          <a href="andover-westfield.html">Andover</a>
+          <a href="viking-meadows.html">Viking Meadows</a>
+          <a href="springmill-westfield.html">Springmill</a>
+          <a href="westfield-new-construction.html">New Construction</a>
+          </div>
+        </div>
+        <div class="dd-city"><a href="carmel-indiana.html">Carmel</a></div>
+        <div class="dd-city"><a href="noblesville-indiana.html">Noblesville</a></div>
+        <div class="dd-city"><a href="fishers-indiana.html">Fishers</a></div>
+        <div class="dd-city"><a href="zionsville-indiana.html">Zionsville</a></div>
+        <div class="dd-city"><a href="indianapolis-indiana.html">Indianapolis</a></div>
+      </div>
+    </div>
     <a href="agent-hub.html">Agent Hub</a>
     <a href="https://docs.google.com/forms/d/e/1FAIpQLSdclbopI-u-K8pwTuJBuKX7IKwtZ7r1-WSbY9pI1-oDFVCSww/viewform" target="_blank" rel="noopener" class="cta">Book a Meeting</a>
   </nav>
@@ -232,5 +240,6 @@
 const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
 document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
 </script>
+<script src="nav.js"></script>
 </body>
 </html>
